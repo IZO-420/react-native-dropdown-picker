@@ -935,9 +935,9 @@ function Picker({
 
     let Component;
     if (open && ArrowUpIconComponent !== null)
-      Component = <ArrowUpIconComponent style={_arrowIconStyle} />;
+    { Component = <ArrowUpIconComponent style={_arrowIconStyle} />; }
     else if (!open && ArrowDownIconComponent !== null)
-      Component = <ArrowDownIconComponent style={_arrowIconStyle} />;
+    { Component = <ArrowDownIconComponent style={_arrowIconStyle} />; }
     else
       Component = (
         <Image
